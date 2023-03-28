@@ -3,7 +3,6 @@
 /**
  * _atoi - Convert a string to integer.
  * @s: char array string
- * Description: Number in the string can be preceded by an infinite
  * Return: first integer found in string
  */
 
