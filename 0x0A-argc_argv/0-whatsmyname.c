@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- * argc: integer
- * argv: array of strings
+ * @argc: integer
+ * @argv: array of strings
  * Return: 0 success
  */
 
