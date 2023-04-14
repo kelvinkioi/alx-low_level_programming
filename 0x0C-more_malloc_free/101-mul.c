@@ -1,25 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
-int is_digit(char* s)
+/**
+ * is_digit - checks if a string contains only digits
+ * @s: pointer to a string
+ * Return: 0 success 1 otherwise
+ */
+int is_digit(char *s)
 {
 	while (*s)
 	{
 	if (!isdigit(*s))
-	return 0;
+	return (0);
 	s++;
 	}
-	return 1;
+	return (1);
 }
-int mul(char * num1, char * num2)
+/**
+ * mul - multiplies two integers
+ * @num1: string
+ * @num2: string
+ * Return: pproduct of a and b
+ */
+int mul(char *num1, char *num2)
 {
 	int a;
 	int b;
+
 	a = atoi(num1);
 	b = atoi(num2);
 	return (a * b);
 }
+/**
+ * main - entry point
+ * @argc: integer
+ * @argv: array of strings
+ * Return: 0 success
+ */
 int main(int argc, char *argv[])
 {
 	char *num1;
@@ -33,7 +50,7 @@ int main(int argc, char *argv[])
 	}
 	num1 = argv[1];
 	num2 = argv[2];
-	if(!is_digit(num1) || !is_digit(num2))
+	if (!is_digit(num1) || !is_digit(num2))
 	{
 		printf("Error\n");
 		exit(98);
