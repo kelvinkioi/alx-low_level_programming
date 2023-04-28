@@ -1,8 +1,6 @@
 #include <stdio.h>
-
 /**
  * printer - A function that is executed before the main function
- * 
  * Return: Void
  */
 
